@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+    <link href="./dist/main.css" rel="stylesheet"></head>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('./worker.js').then(function(registration) {
+              console.log('Worker registration successful', registration.scope);
+            }, function(err) {
+              console.log('Worker registration failed', err);
+            }).catch(function(err) {
+              console.log(err);
+            });
+          });
+        } else {
+          console.log('Service Worker is not supported by browser.');
+        }
+      </script>
+<script type="text/javascript" src="./dist/bundle.js"></script></body>
+</html>
