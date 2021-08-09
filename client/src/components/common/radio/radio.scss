@@ -1,0 +1,21 @@
+.container {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ff0099;
+    box-sizing: border-box;
+    margin-right: 4px;
+  }
+  .checked {
+    background: #ff0099;
+    box-shadow: inset 0px 0px 0px 2px white;
+  }
+  .title {
+    font-size: 18px;
+  }
+}

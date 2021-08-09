@@ -1,0 +1,43 @@
+
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff0099;
+    .title {
+        font-size: 30px;
+        color: white;
+        padding-left: 20px;
+    }
+    .right {
+        padding-right: 20px;
+        .button {
+
+            background: inherit;
+
+            .plus {
+
+                width: 20px;
+                height: 4px;
+                background: white;
+                margin: 8px 0;
+                position: relative;
+
+
+                &::after {
+                    content: '';
+                    height: 20px;
+                    background: inherit;
+                    width: 4px;
+                    display: block;
+                    position: absolute;
+                    top: -8px;
+                    left: 8px;
+                }
+            }
+        }
+    }
+}

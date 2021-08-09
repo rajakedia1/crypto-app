@@ -1,0 +1,73 @@
+.dialog {
+  width: 100%;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+    .title {
+      font-size: 20px;
+    }
+    .button {
+      background: #efefef;
+      transition: 0.3s;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        background: #cecece;
+      }
+      .close {
+        width: 20px;
+        height: 4px;
+        background: #ff0099;
+        margin: 8px 0;
+        position: relative;
+        transform: rotate(45deg);
+
+        &::after {
+          content: "";
+          height: 20px;
+          background: inherit;
+          width: 4px;
+          display: block;
+          position: absolute;
+          top: -8px;
+          left: 8px;
+        }
+      }
+    }
+  }
+  .body {
+    padding: 10px;
+    .transaction {
+      padding: 10px 0;
+      font-size: 14px;
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        .title {
+          display: flex;
+          align-items: center;
+          .buy {
+            margin-right: 5px;
+            color: #50c116;
+            font-weight: bold;
+          }
+          .sell {
+            margin-right: 5px;
+            color: #e20a0a;
+            font-weight: bold;
+          }
+        }
+        .avg {
+          span {
+          }
+        }
+      }
+    }
+  }
+}

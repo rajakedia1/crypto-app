@@ -1,0 +1,18 @@
+{
+	"name": "crypto",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"install": "cd server && npm i && cd ../client && npm i",
+		"start:server": "npm start --prefix server",
+		"start:client": "npm start --prefix client"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"babel-polyfill": "^6.26.0",
+		"idx": "^2.5.6"
+	}
+}

@@ -1,0 +1,25 @@
+.container {
+  box-shadow: 0 0 5px 0px #dedede;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  .row {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    margin: 14px 0;
+    .items {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      text-align: left;
+      span {
+        font-size: 20px;
+        color: #ff0098;
+      }
+    }
+  }
+}

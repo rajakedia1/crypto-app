@@ -1,0 +1,22 @@
+.container {
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  .wrapper {
+    width: 90%;
+    background: white;
+    min-height: 300px;
+    max-height: 600px;
+    overflow-y: scroll;
+  }
+}
+
+.show-dialog {
+  display: flex;
+}
